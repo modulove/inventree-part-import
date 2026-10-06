@@ -62,7 +62,7 @@ def setup_supplier_companies(inventree_api: InvenTreeAPI):
             if supplier_config is None:
                 supplier_config = suppliers_config[id] = {}
             api_company = Company(
-                name=supplier_object.name,
+                name=supplier_config.get("_company_name") or supplier_object.name,
                 currency=supplier_config.get("currency", global_config["currency"]),
                 is_supplier=True,
                 primary_key=supplier_config.get("_primary_key"),

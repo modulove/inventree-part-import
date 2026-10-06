@@ -115,6 +115,8 @@ The following parameters are always available:
 - `currency`: overrides the currency for searching this supplier (see [`config.yaml`](#configyaml))
 - `language`: overrides the language for searching this supplier (see [`config.yaml`](#configyaml))
 - `location`: overrides the location for searching this supplier (see [`config.yaml`](#configyaml))
+- `_company_name`: name of the supplier company in InvenTree (defaults to the supplier name,
+  e.g. `Reichelt`), useful if the company already exists under a different name
 
 Additionally suppliers can have extra parameters for authentifcation to their respective APIs.
 These can be set via the CLI like so: `inventree-part-import --configure <supplier>`.
