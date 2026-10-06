@@ -34,6 +34,9 @@ dependencies = [
     "thefuzz",
 ]
 
+[project.scripts]
+inventree-part-import = "inventree_part_import.cli:inventree_part_import"
+
 [project.urls]
 Homepage = "https://github.com/30350n/inventree_part_import"
 
